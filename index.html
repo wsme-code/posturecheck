@@ -1,4 +1,6 @@
+<!--Lots of code borrowed from: https://codepen.io/huningxin/pen/ZJyOBW-->
 <html>
+<link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <body>
   <div id="container">
@@ -11,14 +13,15 @@
     <label for="eye">eye</label>
   </div>
   <div class="invisible">
-    <video id="video" class="hidden">Your browser does not support the video tag.</video>
+    <!-- This video is hidden because a lot of the js backend uses the video object
+         but I didn't want it displayed-->
+    <video id="video" class="hidden" hidden>Your browser does not support the video tag.</video>
   </div>
 </div>
 </body>
 <script src="src/index.js"></script>
 <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js"></script>
 <script>
   var Module = {
      wasmBinaryFile: 'https://huningxin.github.io/opencv.js/build/wasm/opencv_js.wasm',
