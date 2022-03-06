@@ -25,3 +25,30 @@ canvas {
     vertical-align: top;
     font: 16px 'Lucida Grande', sans-serif;
   }
+
+  /* Up and down button style see following:
+  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_next_prev */
+  a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+
+  a:hover {
+    background-color: #05d186;
+    color: black;
+  }
+  .previous {
+    background-color: white;
+    color: black;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .round {
+    transform: rotate(90deg);
+    border-radius: 50%;
+  }

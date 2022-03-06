@@ -11,6 +11,16 @@ let stream = null;
 let detectFace = document.getElementById('face');
 let detectEye = document.getElementById('eye');
 
+let upButton = document.getElementById('upButton');
+let downButton = document.getElementById('downButton');
+
+// Increase the max y value of the unhealthy posture area
+function decreasePostureTolerance() {
+  let unhealthyPostureVect = new cv.RectVector();
+  let unhealthyPostureVect = new cv.Rect();
+
+}
+
 function startCamera() {
   if (streaming) return;
   navigator.mediaDevices.getUserMedia({video: true, audio: false})
